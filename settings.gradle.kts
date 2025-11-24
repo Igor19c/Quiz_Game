@@ -19,6 +19,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Quiz_Game"
-include(":app")
+//rootProject.name = "Quiz_Game"
+//include(":app")
+
  

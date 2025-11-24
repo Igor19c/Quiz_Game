@@ -17,7 +17,7 @@ class GameOverActivity : AppCompatActivity() {
         binding.finalScoreTextView.text = "Your Score: $score"
 
         binding.resetButton.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, QuizMainActivity::class.java)
             startActivity(intent)
             finish()
         }

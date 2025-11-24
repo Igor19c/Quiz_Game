@@ -1,28 +1,27 @@
 package com.example.quiz_game
 
 import android.content.Intent
-import com.example.quiz_game.databinding.ActivityMainBinding
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.quiz_game.databinding.CounterMainActivityBinding
 
 
-class MainActivity : AppCompatActivity() {
+class QuizMainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: CounterMainActivityBinding
     private val questions: List<Question> = QuizManager.getQuestion().shuffled()
     private var currentQuestionIndex = 0
     private var score = 0
-
     private var lives = 3
     private lateinit var hearts: List<ImageView>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = CounterMainActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         hearts = listOf(

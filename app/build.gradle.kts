@@ -1,7 +1,10 @@
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
+    id("com.android.library")
+    id("org.jetbrains.kotlin.android")
+    //alias(libs.plugins.android.application)
+    //alias(libs.plugins.kotlin.android)
 }
+
 
 android {
     namespace = "com.example.quiz_game"
@@ -10,11 +13,11 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.quiz_game"
+        //applicationId = "com.example.quiz_game"
         minSdk = 24
-        targetSdk = 36
-        versionCode = 1
-        versionName = "1.0"
+        //targetSdk = 36
+        //versionCode = 1
+        //versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
